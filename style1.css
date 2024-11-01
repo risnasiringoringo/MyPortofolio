@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ffcccc; 
+    color: #333; 
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.hero {
+    background-image: url(flower.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 40px;
+    color: #fff; 
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffcccc; 
+    color: #333; 
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ffb3b3; 
+}
+
+.featured {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.featured h2 {
+    margin-bottom: 40px;
+}
+.hero {
+    background-color: #ffe0e6;
+    padding: 60px 0;
+    text-align: center;
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #ff6384;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff4f72;
+}
+
+.featured {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.container-products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Menggunakan flex-wrap untuk membuatnya responsif */
+    gap: 20px; /* Jarak antar produk */
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Lebar tetap untuk setiap produk */
+    transition: transform 0.3s;
+    text-align: left; /* Teks rata kiri untuk tampilan produk */
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #ff6384;
+    margin-bottom: 10px;
+}
+
+.product p.Deskripsi {
+    font-size: 16px;
+    color: #666;
+}
+
+footer {
+    background-color: #f8cdd4;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .product {
+        max-width: 100%;
+    }
+}

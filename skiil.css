@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  nav {
+    background-color: #ffafcc;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .logo span {
+    color: #ff7b9c;
+  }
+  
+  .links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .link a, .About a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .link a:hover, .About a:hover {
+    background-color: #ff7b9c;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .hamburg {
+    display: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .links {
+      display: none;
+    }
+    .hamburg {
+      display: block;
+    }
+    .dropdown {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #ffafcc;
+      width: 200px;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown .links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  #skills {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title-skills {
+    font-size: 32px;
+    color: #ff7b9c;
+    margin-bottom: 30px;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .skills-left, .skills-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffafcc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .experience-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .experience-date {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .experience-info p {
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  .line div {
+    width: 5px;
+    height: 100%;
+    background-color: #ff7b9c;
+    border-radius: 2px;
+  }
+  
+  
